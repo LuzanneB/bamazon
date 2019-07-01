@@ -1,0 +1,28 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "check the inventory",
+  "main": "bamazon.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuzanneB/bamazon.git"
+  },
+  "keywords": [
+    "bamazon",
+    "mysql",
+    "database"
+  ],
+  "author": "luzanne burt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuzanneB/bamazon/issues"
+  },
+  "homepage": "https://github.com/LuzanneB/bamazon#readme",
+  "dependencies": {
+    "easy-table": "^1.1.1",
+    "mysql": "^2.17.1"
+  }
+}
