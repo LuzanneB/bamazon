@@ -18,7 +18,7 @@ const connection = mysql.createConnection({
 
 connection.connect(function(err) {
   if (err) throw err;
-    showTable();   
+    showTable();  
 });
 
 function showTable(){
@@ -30,6 +30,9 @@ function showTable(){
   console.log(Table.print(res));
   start();
   })};
+
+
+
 
 function start(){
   inquirer.prompt([
@@ -73,13 +76,13 @@ function updateTable(purchaseQty, productChoice){
       else{
         console.log("I'm sorry, we don't have enough "+ productChoice + " to complete your order.");
       }
-      showTable();
+      // show the updated table
+     showTable();
+      
     });
 //end updateTable() 
 }
 
 
-// if user selects exit
-function exit(){
-  connection.end();
-}
+
+
