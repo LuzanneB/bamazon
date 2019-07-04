@@ -27,7 +27,7 @@ function showTable(){
   function(err, res) {
   if (err) throw err;
   // Log all results of the SELECT statement
-  console.table(res);
+  console.log(Table.print(res));
   start();
   })};
 
@@ -57,7 +57,7 @@ function start(){
 function updateTable(purchaseQty, productChoice){
   // end function
   let query= "SELECT * FROM products WHERE ?";
-  connection.query(query,[{product_name = productChoice}],
+  connection.query(query,[{product_name:productChoice}],
      function(err,res){
       if (err) throw err;
       // check to see if we have enough in stock
